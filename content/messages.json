@@ -1,0 +1,52 @@
+{
+  "page_overline": "The Archive",
+  "page_title": "Messages.",
+  "subtitle": "Every word spoken at FIRE CAMP is a weapon. These are the ones that changed everything.",
+  "years": [
+    {
+      "year": "2024",
+      "messages": [
+        {
+          "id": "fc2024-1",
+          "title": "The Fire Is Real.",
+          "speaker": "FIRE CAMP Ministry Team",
+          "series": "FIRE CAMP 2024",
+          "duration": "58 min",
+          "thumbnail": "/images/gallery/message-1.jpg",
+          "youtube_id": "dQw4w9WgXcQ",
+          "description": "The opening night message that set the tone for everything."
+        },
+        {
+          "id": "fc2024-2",
+          "title": "Come As You Are.",
+          "speaker": "FIRE CAMP Ministry Team",
+          "series": "FIRE CAMP 2024",
+          "duration": "52 min",
+          "thumbnail": "/images/gallery/message-2.jpg",
+          "youtube_id": "dQw4w9WgXcQ",
+          "description": "Day 2 morning session. This is where the room broke open."
+        },
+        {
+          "id": "fc2024-3",
+          "title": "Set Apart. Sent Out.",
+          "speaker": "FIRE CAMP Ministry Team",
+          "series": "FIRE CAMP 2024",
+          "duration": "61 min",
+          "thumbnail": "/images/gallery/message-3.jpg",
+          "youtube_id": "dQw4w9WgXcQ",
+          "description": "The commissioning message. The one that changed destinies."
+        },
+        {
+          "id": "fc2024-4",
+          "title": "The Closing Fire.",
+          "speaker": "FIRE CAMP Ministry Team",
+          "series": "FIRE CAMP 2024",
+          "duration": "45 min",
+          "thumbnail": "/images/gallery/message-4.jpg",
+          "youtube_id": "dQw4w9WgXcQ",
+          "description": "Final night. You had to be there. Now you can watch."
+        }
+      ]
+    }
+  ]
+}

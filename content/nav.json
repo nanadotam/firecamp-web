@@ -1,0 +1,10 @@
+{
+  "links": [
+    { "label": "About", "href": "/#about" },
+    { "label": "Lineup", "href": "/lineup" },
+    { "label": "Messages", "href": "/messages" },
+    { "label": "Podcast", "href": "/podcast" },
+    { "label": "Gallery", "href": "/gallery" }
+  ],
+  "cta": { "label": "Register Now", "href": "/#register" }
+}

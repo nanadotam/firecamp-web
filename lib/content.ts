@@ -1,0 +1,23 @@
+import siteData from "@/content/site.json";
+import navData from "@/content/nav.json";
+import heroData from "@/content/hero.json";
+import statsData from "@/content/stats.json";
+import aboutData from "@/content/about.json";
+import sermonData from "@/content/sermon.json";
+import eventsData from "@/content/events.json";
+import nextstepsData from "@/content/nextsteps.json";
+import galleryData from "@/content/gallery.json";
+import footerData from "@/content/footer.json";
+import firecamp2026Data from "@/content/firecamp2026.json";
+
+export const site = siteData;
+export const nav = navData;
+export const hero = heroData;
+export const stats = statsData;
+export const about = aboutData;
+export const sermon = sermonData;
+export const events = eventsData;
+export const nextsteps = nextstepsData;
+export const gallery = galleryData;
+export const footer = footerData;
+export const firecamp2026 = firecamp2026Data;

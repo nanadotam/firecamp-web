@@ -1,0 +1,10 @@
+{
+  "section_overline": "Get Involved",
+  "section_title": "Your Next Move.",
+  "steps": [
+    { "id": "visit", "icon": "MapPin", "overline": "Find Us", "title": "Visit", "description": "Show up. See what the atmosphere feels like.", "cta": "Get Directions", "href": "#" },
+    { "id": "watch", "icon": "Play", "overline": "On Demand", "title": "Watch", "description": "Sermons, testimonies, and moments from the fire.", "cta": "Watch Now", "href": "#sermon" },
+    { "id": "give", "icon": "Heart", "overline": "Support", "title": "Give", "description": "Partner with the vision. Every gift builds the fire.", "cta": "Give Now", "href": "#" },
+    { "id": "connect", "icon": "Users", "overline": "Community", "title": "Connect", "description": "Join the Firebrand community. You belong here.", "cta": "Join Us", "href": "#" }
+  ]
+}

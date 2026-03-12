@@ -1,0 +1,32 @@
+{
+  "section_overline": "They Were There",
+  "section_title": "The Fire Is Real.",
+  "subtitle": "Real people. Real encounters. This is what happens at FIRE CAMP.",
+  "testimonies": [
+    {
+      "id": 1,
+      "name": "Kofi A.",
+      "location": "Accra, Ghana",
+      "year": "FIRE CAMP 2024",
+      "quote": "I came broken. I left whole. I don't know how to explain what happened except God showed up in that room.",
+      "image": "/images/gallery/testimony-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Abena M.",
+      "location": "Kumasi, Ghana",
+      "year": "FIRE CAMP 2024",
+      "quote": "The worship on night three. I will never forget it. Something shifted in me that has not shifted back.",
+      "image": "/images/gallery/testimony-2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Emmanuel O.",
+      "location": "Tema, Ghana",
+      "year": "FIRE CAMP 2023",
+      "quote": "My friends dragged me. I went with doubts. I came home a Firebrand. That was two years ago. The fire never went out.",
+      "image": "/images/gallery/testimony-3.jpg"
+    }
+  ],
+  "cta": { "label": "Register for 2026", "href": "#register" }
+}

@@ -1,0 +1,42 @@
+{
+  "section_overline": "Upcoming",
+  "section_title": "Gatherings.",
+  "events": [
+    {
+      "id": "firecamp-2026",
+      "title": "FIRE CAMP 2026",
+      "subtitle": "The Main Event",
+      "date": "August 2026",
+      "location": "Ghana",
+      "description": "5 days. Unfiltered worship. Real encounters. You will not leave the same.",
+      "image": "/images/gallery/event-1.jpg",
+      "cta_label": "Register Now",
+      "cta_href": "#register",
+      "featured": true
+    },
+    {
+      "id": "pre-camp-night",
+      "title": "Pre-Camp Night",
+      "subtitle": "The Warm-Up",
+      "date": "TBA 2026",
+      "location": "KCF Campus",
+      "description": "Get ready. Something is building.",
+      "image": "/images/gallery/event-2.jpg",
+      "cta_label": "Stay Tuned",
+      "cta_href": "#",
+      "featured": false
+    },
+    {
+      "id": "firebrand-service",
+      "title": "Firebrand Service",
+      "subtitle": "Post-Camp Gathering",
+      "date": "TBA 2026",
+      "location": "Zion Impact Ministries",
+      "description": "The fire does not stop when camp ends.",
+      "image": "/images/gallery/event-3.jpg",
+      "cta_label": "More Info",
+      "cta_href": "#",
+      "featured": false
+    }
+  ]
+}

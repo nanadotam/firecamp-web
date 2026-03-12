@@ -1,0 +1,17 @@
+{
+  "tagline": "Where God Shows Up.",
+  "ministry": "Zion Impact Ministries / KCF",
+  "links": [
+    { "label": "About", "href": "#about" },
+    { "label": "Messages", "href": "#sermon" },
+    { "label": "Events", "href": "#events" },
+    { "label": "Gallery", "href": "#gallery" },
+    { "label": "Register", "href": "#register" }
+  ],
+  "social": [
+    { "platform": "Instagram", "handle": "@firecampgh", "href": "#" },
+    { "platform": "WhatsApp Community", "href": "#" }
+  ],
+  "copyright": "© 2026 FIRE CAMP. Zion Impact Ministries / KCF. All rights reserved.",
+  "hashtags": "#FireCamp2026 · #Firebrand · #SetAblaze"
+}

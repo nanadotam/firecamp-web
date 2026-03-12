@@ -1,0 +1,34 @@
+{
+  "page_overline": "The Firebrand Podcast",
+  "page_title": "Listen In.",
+  "subtitle": "Conversations on faith, fire, and the Kingdom. New episodes weekly.",
+  "platform_links": [
+    { "name": "Spotify", "href": "#" },
+    { "name": "Apple Podcasts", "href": "#" },
+    { "name": "YouTube", "href": "#" }
+  ],
+  "episodes": [
+    {
+      "id": "ep-001",
+      "episode": "EP 01",
+      "title": "Why FIRE CAMP Exists.",
+      "guest": "The Founders",
+      "duration": "42 min",
+      "date": "January 2026",
+      "description": "The origin story. Why we started. What we believe God is doing. And why we refuse to make it smaller than it is.",
+      "thumbnail": "/images/gallery/podcast-1.jpg",
+      "embed_url": ""
+    },
+    {
+      "id": "ep-002",
+      "episode": "EP 02",
+      "title": "Anointing and Excellence Are Not Opposites.",
+      "guest": "Creative Team",
+      "duration": "38 min",
+      "date": "February 2026",
+      "description": "What it means to honour God with craft. Why the best church media is the best witness.",
+      "thumbnail": "/images/gallery/podcast-2.jpg",
+      "embed_url": ""
+    }
+  ]
+}

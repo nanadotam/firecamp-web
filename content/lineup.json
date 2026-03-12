@@ -1,0 +1,72 @@
+{
+  "section_overline": "May 4–9, 2026",
+  "section_title": "The Lineup.",
+  "subtitle": "5 days. Every moment scheduled. Every session intentional.",
+  "days": [
+    {
+      "day": "Day 1",
+      "date": "Sunday, May 4",
+      "theme": "The Arrival",
+      "sessions": [
+        { "time": "4:00 PM", "title": "Registration & Check-In", "type": "logistics" },
+        { "time": "6:00 PM", "title": "Opening Night — Welcome to the Fire", "type": "worship" },
+        { "time": "8:00 PM", "title": "Night Session: The Invitation", "type": "ministry" }
+      ]
+    },
+    {
+      "day": "Day 2",
+      "date": "Monday, May 5",
+      "theme": "The Hunger",
+      "sessions": [
+        { "time": "6:00 AM", "title": "Morning Devotion", "type": "devotion" },
+        { "time": "9:00 AM", "title": "Morning Session: Come As You Are", "type": "ministry" },
+        { "time": "12:00 PM", "title": "Prayer & Rest", "type": "prayer" },
+        { "time": "3:00 PM", "title": "Workshop: Identity in Christ", "type": "workshop" },
+        { "time": "7:00 PM", "title": "Evening Session: The Breaking", "type": "worship" }
+      ]
+    },
+    {
+      "day": "Day 3",
+      "date": "Tuesday, May 6",
+      "theme": "The Encounter",
+      "sessions": [
+        { "time": "6:00 AM", "title": "Morning Devotion", "type": "devotion" },
+        { "time": "9:00 AM", "title": "Morning Session: Face to Face", "type": "ministry" },
+        { "time": "2:00 PM", "title": "Workshop: Prayer & Intercession", "type": "workshop" },
+        { "time": "7:00 PM", "title": "Night of Worship — No Agenda", "type": "worship" }
+      ]
+    },
+    {
+      "day": "Day 4",
+      "date": "Wednesday, May 7",
+      "theme": "The Commission",
+      "sessions": [
+        { "time": "6:00 AM", "title": "Morning Devotion", "type": "devotion" },
+        { "time": "9:00 AM", "title": "Morning Session: Set Apart, Sent Out", "type": "ministry" },
+        { "time": "2:00 PM", "title": "Workshop: Your Calling", "type": "workshop" },
+        { "time": "7:00 PM", "title": "Evening Session: The Commissioning Fire", "type": "worship" }
+      ]
+    },
+    {
+      "day": "Day 5",
+      "date": "Thursday, May 8",
+      "theme": "The Sending",
+      "sessions": [
+        { "time": "6:00 AM", "title": "Final Morning Devotion", "type": "devotion" },
+        { "time": "9:00 AM", "title": "Testimony Service — Your Story Matters", "type": "ministry" },
+        { "time": "2:00 PM", "title": "Firebrand Commissioning Ceremony", "type": "ceremony" },
+        { "time": "7:00 PM", "title": "Closing Night — The Fire Never Dies", "type": "worship" }
+      ]
+    },
+    {
+      "day": "Final Day",
+      "date": "Friday, May 9",
+      "theme": "The Departure",
+      "sessions": [
+        { "time": "8:00 AM", "title": "Final Breakfast & Fellowship", "type": "logistics" },
+        { "time": "10:00 AM", "title": "Send-Off Prayer", "type": "prayer" },
+        { "time": "12:00 PM", "title": "Departure", "type": "logistics" }
+      ]
+    }
+  ]
+}
