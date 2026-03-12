@@ -120,65 +120,7 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          <motion.div
-            className="surface-panel hidden rounded-[2rem] border border-white/12 p-6 text-left text-cream shadow-[0_20px_80px_rgba(0,0,0,0.38)] lg:block"
-            initial={{ opacity: 0, x: 24 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, ease: EASE, delay: 0.35 }}
-          >
-            <p className="font-body text-[11px] uppercase tracking-[0.28em] text-flame">
-              Visual Journey
-            </p>
-            <div className="mt-6 aspect-[4/5] overflow-hidden rounded-[1.5rem] border border-white/10">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={HERO_SLIDES[activeSlide]}
-                  initial={{ opacity: 0.5, scale: 1.06 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0.2 }}
-                  transition={{ duration: 0.8, ease: EASE }}
-                  className="relative h-full w-full"
-                >
-                  <Image
-                    src={HERO_SLIDES[activeSlide]}
-                    alt="Fire Camp moments"
-                    fill
-                    className="object-cover object-center"
-                    sizes="360px"
-                  />
-                  <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_20%,rgba(10,10,10,0.72)_100%)]" />
-                </motion.div>
-              </AnimatePresence>
-            </div>
-            <div className="mt-5 flex gap-2">
-              {HERO_SLIDES.map((slide, index) => (
-                <button
-                  key={slide}
-                  type="button"
-                  onClick={() => setActiveSlide(index)}
-                  className="group flex-1"
-                  aria-label={`Show slide ${index + 1}`}
-                >
-                  <span className="block h-1.5 overflow-hidden rounded-full bg-white/10">
-                    <motion.span
-                      className="block h-full rounded-full bg-gradient-to-r from-gold to-flame"
-                      initial={false}
-                      animate={{
-                        width: index === activeSlide ? '100%' : index < activeSlide ? '100%' : '0%',
-                      }}
-                      transition={{
-                        duration: index === activeSlide ? SLIDE_INTERVAL / 1000 : 0.35,
-                        ease: 'linear',
-                      }}
-                    />
-                  </span>
-                </button>
-              ))}
-            </div>
-            <p className="mt-4 font-body text-sm leading-7 text-[#D2B9AA]">
-              A clean, cinematic preview of prayer, teaching, worship, and the moments that make FIRE CAMP unforgettable.
-            </p>
-          </motion.div>
+
         </div>
       </div>
 
