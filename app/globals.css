@@ -124,3 +124,20 @@ body::before {
 .text-balance {
   text-wrap: balance;
 }
+
+/* ── Hero slider pagination dots ── */
+.hero-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 225, 210, 0.35);
+  border-radius: 9999px;
+  opacity: 1;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hero-pagination .swiper-pagination-bullet-active {
+  width: 28px;
+  background: #F09050;
+  border-radius: 9999px;
+}

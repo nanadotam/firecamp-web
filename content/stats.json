@@ -1,7 +1,7 @@
 {
   "items": [
     { "number": "20", "suffix": "+", "label": "Years Running" },
-    { "number": "100000", "suffix": "+", "label": "Lives Changed" },
+    { "number": "7000", "suffix": "+", "label": "Lives Changed" },
     { "number": "5", "suffix": " Days", "label": "Of Encounter" },
     { "number": "500", "suffix": "", "label": "Destiny Shifts" }
   ]

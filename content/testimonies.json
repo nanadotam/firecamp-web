@@ -9,7 +9,7 @@
       "location": "Accra, Ghana",
       "year": "FIRE CAMP 2024",
       "quote": "I came broken. I left whole. I don't know how to explain what happened except God showed up in that room.",
-      "image": "/images/gallery/testimony-1.jpg"
+      "image": "/images/FC-2.webp"
     },
     {
       "id": 2,
@@ -17,7 +17,7 @@
       "location": "Kumasi, Ghana",
       "year": "FIRE CAMP 2024",
       "quote": "The worship on night three. I will never forget it. Something shifted in me that has not shifted back.",
-      "image": "/images/gallery/testimony-2.jpg"
+      "image": "/images/FC-3.webp"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "location": "Tema, Ghana",
       "year": "FIRE CAMP 2023",
       "quote": "My friends dragged me. I went with doubts. I came home a Firebrand. That was two years ago. The fire never went out.",
-      "image": "/images/gallery/testimony-3.jpg"
+      "image": "/images/FC-4.webp"
     }
   ],
   "cta": { "label": "Register for 2026", "href": "#register" }

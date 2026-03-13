@@ -56,8 +56,8 @@ export default function Navigation() {
                 <div className="font-display text-sm uppercase tracking-[0.24em] text-cream">
                   Fire Camp
                 </div>
-                <div className="font-body text-[11px] uppercase tracking-[0.28em] text-ash">
-                  Zion Impact Ministries
+                <div className="font-body text-[11px] uppercase tracking-[0.28em] text-cream">
+                  A Zion Impact Ministries Event
                 </div>
               </div>
             </Link>
@@ -68,7 +68,7 @@ export default function Navigation() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="font-body text-[13px] text-ash hover:text-cream uppercase tracking-[0.18em] transition-colors duration-200"
+                  className="font-body text-[13px] text-cream hover:text-cream uppercase tracking-[0.18em] transition-colors duration-200"
                 >
                   {link.label}
                 </Link>

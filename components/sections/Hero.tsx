@@ -1,22 +1,30 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-import Image from 'next/image'
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { ChevronDown, Sparkles } from 'lucide-react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay, Pagination, EffectFade } from 'swiper/modules'
+import Image from 'next/image'
+
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/effect-fade'
+
 import SectionLabel from '@/components/ui/SectionLabel'
 import Button from '@/components/ui/Button'
 import Countdown from '@/components/ui/Countdown'
 import hero from '@/content/hero.json'
 
 const EASE = [0.16, 1, 0.3, 1] as [number, number, number, number]
+
 const HERO_SLIDES = [
-  '/images/gallery/hero-1.jpg',
-  '/images/gallery/hero-2.jpg',
-  '/images/gallery/about-1.jpg',
-  '/images/gallery/event-1.jpg',
+  { image: '/images/hero/FC-21.webp', alt: 'Fire Camp — Where God Shows Up' },
+  { image: '/images/hero/FC-22.webp', alt: 'Fire Camp — Revival Atmosphere' },
+  { image: '/images/hero/FC-23.webp', alt: 'Fire Camp — Prayer. Word. Encounter.' },
+  { image: '/images/hero/FC-24.webp', alt: 'Fire Camp — Zion Impact Ministries' },
+  { image: '/images/hero/FC-25.webp', alt: 'Fire Camp — Come Hungry' },
+  { image: '/images/hero/FC-26.webp', alt: 'Fire Camp — You Will Not Leave the Same' },
 ]
-const SLIDE_INTERVAL = 5000
 
 const fadeUp = (delay: number = 0) => ({
   initial: { opacity: 0, y: 24 },
@@ -25,50 +33,55 @@ const fadeUp = (delay: number = 0) => ({
 })
 
 export default function Hero() {
-  const [activeSlide, setActiveSlide] = useState(0)
-
-  useEffect(() => {
-    const timer = window.setInterval(() => {
-      setActiveSlide((current) => (current + 1) % HERO_SLIDES.length)
-    }, SLIDE_INTERVAL)
-
-    return () => window.clearInterval(timer)
-  }, [])
-
   return (
     <section id="home" className="relative flex min-h-[100svh] items-center overflow-hidden pt-24">
+
+      {/* ── Swiper background slider ── */}
       <div className="absolute inset-0">
-        <AnimatePresence mode="sync">
-          {HERO_SLIDES.map((slide, index) =>
-            index === activeSlide ? (
-              <motion.div
-                key={slide}
-                initial={{ opacity: 0, scale: 1.08 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 1.2, ease: EASE }}
-                className="absolute inset-0"
-              >
-                <Image
-                  src={slide}
-                  alt="FIRE CAMP"
-                  fill
-                  priority={index === 0}
-                  className="object-cover object-center [animation:var(--animate-drift)]"
-                  sizes="100vw"
-                />
-              </motion.div>
-            ) : null
-          )}
-        </AnimatePresence>
+        <Swiper
+          modules={[Autoplay, Pagination, EffectFade]}
+          effect="fade"
+          fadeEffect={{ crossFade: true }}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          pagination={{
+            clickable: true,
+            el: '.hero-pagination',
+          }}
+          loop={true}
+          speed={1200}
+          className="h-full w-full"
+        >
+          {HERO_SLIDES.map((slide) => (
+            <SwiperSlide key={slide.image} className="relative h-full w-full">
+              <Image
+                src={slide.image}
+                alt={slide.alt}
+                fill
+                priority={slide.image === HERO_SLIDES[0].image}
+                className="object-cover object-center"
+                sizes="100vw"
+              />
+              <div className="absolute inset-0 bg-black/50" />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
+      {/* ── Overlays ── */}
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0.48)_0%,rgba(10,10,10,0.24)_22%,rgba(10,10,10,0.82)_84%,#0A0A0A_100%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(232,164,74,0.16),transparent_28%),radial-gradient(circle_at_78%_30%,rgba(240,144,80,0.16),transparent_32%)]" />
-      <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px)', backgroundSize: '120px 120px' }} />
+      <div
+        className="absolute inset-0 opacity-30"
+        style={{
+          backgroundImage:
+            'linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px)',
+          backgroundSize: '120px 120px',
+        }}
+      />
       <div className="absolute -left-24 top-40 h-64 w-64 rounded-full bg-flame/15 blur-3xl" />
       <div className="absolute bottom-16 right-0 h-72 w-72 rounded-full bg-gold/10 blur-3xl" />
 
+      {/* ── Text content ── */}
       <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col px-6 pb-28 lg:px-8">
         <div className="grid items-end gap-12 lg:grid-cols-[minmax(0,1.2fr)_360px]">
           <div className="max-w-5xl">
@@ -98,10 +111,7 @@ export default function Hero() {
               {hero.subtext}
             </motion.p>
 
-            <motion.div
-              className="mt-10 flex flex-wrap items-center gap-4"
-              {...fadeUp(0.5)}
-            >
+            <motion.div className="mt-10 flex flex-wrap items-center gap-4" {...fadeUp(0.5)}>
               <Button label={hero.primary_cta.label} href={hero.primary_cta.href} variant="primary" />
               <Button label={hero.secondary_cta.label} href={hero.secondary_cta.href} variant="ghost" />
             </motion.div>
@@ -119,15 +129,17 @@ export default function Hero() {
               </span>
             </motion.div>
           </div>
-
-
         </div>
       </div>
 
+      {/* ── Swiper pagination dots ── */}
+      <div className="hero-pagination absolute bottom-20 left-1/2 z-20 -translate-x-1/2 flex gap-2" />
+
       <Countdown variant="hero" />
 
+      {/* ── Scroll indicator ── */}
       <motion.div
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 text-ash flex flex-col items-center gap-2"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 text-ash flex flex-col items-center gap-2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2, duration: 0.6 }}
