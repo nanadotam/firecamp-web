@@ -13,8 +13,9 @@
   --color-ember: #C4612A;
 
   /* Font Families */
-  --font-display: var(--font-unbounded), sans-serif;
-  --font-body: Arial, Helvetica, "Segoe UI", sans-serif;
+  --font-display: "Unbounded", sans-serif;
+  --font-body: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-clean: "Inter", "Helvetica Neue", Arial, sans-serif;
 
   /* Background Gradients */
   --background-image-ember-rise: linear-gradient(135deg, #0A0A0A 0%, #2A1F18 50%, #C4612A 100%);
@@ -61,12 +62,16 @@ html {
   scroll-behavior: smooth;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
 body {
   background:
     radial-gradient(circle at top, rgba(232,164,74,0.12), transparent 30%),
     linear-gradient(180deg, #120d0a 0%, #0A0A0A 100%);
   color: #FFE1D2;
-  font-family: var(--font-body);
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
